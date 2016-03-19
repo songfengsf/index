@@ -1,0 +1,601 @@
+*{
+    font-family: "微软雅黑";
+}
+.top{
+    height: 30px;
+    background-color:#f1f1f1 ;
+}
+.tCenter{
+    margin: 0 auto;
+    width: 1200px;
+    height: 100%;
+}
+.place{
+    float: left;
+}
+.liPlace{
+    position: relative;
+    width: 95px;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+}
+.allPlace{
+    background-color: white;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 310px;
+    height: 245px;
+    border: 1px solid #ccc;
+    display: none;
+    z-index: 10;
+}
+.allPlace a{
+    text-decoration: none;
+    float: left;
+    width: 44px;
+    padding: 1px 0 1px 16px;
+    height: 27px;
+    cursor: pointer;
+}
+.allPlace a:hover{
+    text-decoration: none;
+    background-color: #f4f4f4;
+}
+.allPlace a.bg{
+    background-color: #c81623;
+}
+
+/*--------------*/
+.rightList{
+    float: right;
+}
+.rightList li.change:hover .rightList .change .a{
+    color: #c91623;
+}
+.rightList li.da{
+    position: relative;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    margin:0 10px;
+}
+.rightList li a.border{
+    display: inline-block;
+    height: 15px;
+    line-height: 15px;
+    border-left: 1px solid #ccc;
+    padding-left: 10px;
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+}
+.rightList .small{
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border: 1px solid ;
+    border-color: black black transparent transparent;
+    transform: rotate(-45deg);
+    margin-left: 5px;
+}
+.rightList #aPhone{
+    padding-left: 25px;
+}
+.rightList .phone{  /*手机京东的手机图标*/
+    position:absolute;
+    top: 9px;
+    left: 11px;
+    display: inline-block;
+    width: 11px;
+    height: 16px;
+    background: url("../img/top.1.png") no-repeat -2px -2px;
+}
+.rightList li:hover .small{  /*small是那个小的三角*/
+    transform: rotate(135deg);
+    position:relative;
+    top: -2px;
+    right: 0px;
+}
+/*  我的京东 滑过弹出框*/
+.liMine{
+    position: relative;
+}
+.rightList .mine{
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    width: 285px;
+    height: 195px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: none;
+    background-color: white;
+    z-index: 2;
+}
+.rightList .mine .sLeft{
+    float: left;
+    margin-right: 20px;
+}
+.rightList .mine .sLeft img{
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+}
+.rightList .mine .shang .sRight{
+    float: right;
+}
+.rightList .mine .shang a{
+    text-decoration: none;
+    font-size: 14px;
+}
+.rightList .mine .shang .sRight .rightUl{
+    font-size: 12px;
+}
+.rightList .mine .xia .xiaLeft{
+    float: left;
+    font-size: 12px;
+    margin-left: 20px;
+}
+.rightList .mine .xia .xiaRight{
+    float: right;
+    font-size: 12px;
+    margin-right: 20px;
+}
+.rightList .liMine:hover{
+    background-color: white;
+}
+.rightList .liMine:hover .mine{
+    display: block;
+}
+/*   --------------*/
+
+/*logo部分*/
+.head .hCenter{
+    margin: 0 auto;
+    width: 1205px;
+    height:100px;
+}
+
+.head .hCenter .logo{
+    float: left;
+    margin-top: 30px;
+    display: inline-block;
+    width: 270px;
+    height: 60px;
+    background: url("../img/logo.png") no-repeat 0 0;
+}
+.head .hCenter .input{
+    position: relative;
+    margin: 25px 0 0 60px;
+    float: left;
+}
+.head .hCenter .input .search{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    height: 39px;
+    line-height: 39px;
+    width: 70px;
+    text-align: center;
+    color: white;
+    background-color:#b61d1d ;
+}
+
+.head .hCenter .input input{
+    width: 540px;
+    height: 35px;
+    border: 2px solid #b61d1d;
+    padding: 0px 10px;
+}
+.head .hCenter .input .inputUl li{
+    float: left;
+    margin-left: 10px;
+}
+.head .hCenter .input .inputUl li a{
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+}
+.head .hCenter .input .inputUl li a.one{
+    color: #b61d1d;
+}
+.head .hCenter .input .inputUl li:hover a{
+    color:#b61d1d ;
+}
+/*购物车 */
+.head .car{
+    text-align: center;
+    position: relative;
+    float: right;
+     width: 140px;
+     height: 35px;
+     line-height: 35px;
+    margin: 30px 20px 0 0;
+     border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+.head .car .imgCar{
+    display: inline-block;
+    width: 25px;
+    height: 18px;
+    background: url("../img/top.1.png") no-repeat 2px -54px;
+}
+.head .car a{
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+}
+.head .car .hiddenCar{
+    position: absolute;
+    top: 35px;
+    right: 0px;
+    width: 310px;
+    height: 70px;
+    font-size: 12px;
+    color: #999;
+    border: 1px solid #ccc;
+    background-color:white ;
+    display: none;
+}
+.head .car .hiddenCar .span1{
+    position: relative;
+    top: 10px;
+    left: 0px;
+    display: inline-block;
+    width: 57px;
+    height: 49px;
+    background: url("../img/car.png") no-repeat 0 0;
+}
+.head .car:hover .hiddenCar{
+    display: block;
+}
+.head .car:hover{
+    background: white;
+}
+/*设置“全部商品那一行”*/
+.head .bottom{
+    margin: 10px auto;
+    width: 1205px;
+}
+
+.head .bottom ul li{
+    float: left;
+    margin-right: 30px;
+    height: 45px;
+    line-height: 45px;
+
+}
+.head .bottom ul li a{
+    text-decoration: none;
+    color: black;
+}
+.head .bottom ul .oneLi{
+    width: 200px;
+    height: 45px;
+    background: #b1191a;
+    color: white;
+    line-height: 45px;
+    padding-left: 10px;
+}
+.head .bottom ul li.b_li:hover a{
+    color: #c81623;
+}
+.head{
+    height: 185px;
+    border-bottom: 2px solid #b1191a;
+}
+
+/*body部分*/
+.box{
+    margin: 0 auto;
+    width: 1205px;
+    /*border: 1px solid red;*/
+    overflow: hidden;
+}
+.box .leftList{
+    float: left;
+    width: 209px;
+    background-color:#c81623 ;
+    border-bottom: 1px solid #c81623;
+    border-left:1px solid #c81623 ;
+}
+.box .leftList ul li{
+    position: relative;
+    height: 31px;
+    line-height: 30px;
+    padding:0 10px;
+    cursor: pointer;
+}
+.box .leftList ul li span{
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border: 1px solid ;
+    border-color:white white transparent transparent;
+    transform: rotate(45deg);
+}
+.box .leftList ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+
+}
+.box .leftList ul li:hover{
+    background-color: white;
+}
+.box .leftList ul li:hover a{
+    color: black;
+}
+.box .leftList ul li .div1{/*div1是左侧隐藏的*/
+    position: absolute;
+    left: 210px;
+    width: 1000px;
+    height: 485px;
+    background-color: #f7f7f7;
+    display: none;
+    z-index: 2;
+}
+
+/*轮播图*/
+.selfShow{
+    position: relative;
+    margin: 10px 0 0 10px;
+    width: 730px;
+    height: 454px;
+    border: 1px solid red;
+    overflow: hidden;
+}
+.selfShow .showInner{
+    height:454px;
+    position: absolute;
+    top: 0;
+    left: 0px;
+}
+.showInner div{
+    float: left;
+    width: 730px;
+    height: 454px;
+}
+.tip{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+.tip li{
+    float: left;
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+.tip li.bg {
+    background: #ff6600;
+}
+.selfShow{
+    float: left;
+}
+.selfShow a{
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 45px;
+    background: url("../img/pre.png") no-repeat;
+}
+.selfShow a.btnLeft{
+    left: 20px;
+}
+.selfShow a.btnRight{
+    right: 20px;
+    background-position: -50px 0;
+}
+
+/*京东快报*/
+.newsFlash{
+    margin-top: 10px;
+    float: right;
+    width: 240px;
+    overflow: hidden;
+    border: 1px solid red;
+}
+.newsFlash .flashUl{
+    width: 240px;
+
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+.newsFlash .flashUl li{
+    width: 100%;
+    height: 25px;
+    line-height: 30px;
+    float: left;
+    list-style: none;
+}
+.newsFlash .flashUl li a{
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 13px;
+    color: #666;
+}
+.newsFlash .oneF{
+    border-bottom: 1px solid #ccc;
+}
+.newsFlash .oneF h6{
+    margin-left: 20px;
+    float: left;
+    color: #666;
+}
+.newsFlash .oneF #oneA{
+    margin-left:90px ;
+    color: #666;
+    font-size: 14px;
+}
+.newsFlash .flashSp{
+    font-weight: 900;
+    font-size: 14px;
+}
+.newsFlash a:hover{
+    color: #c81623;
+}
+/* -------------------*/
+
+.select{
+    position: relative;
+    width: 240px;
+    height: 190px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+}
+.select ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 75px;
+}
+.select li{
+    width: 59px;
+    height: 100%; /*这里不能直接设置高度，设置height：100%，这样li的高度就能跟随ul的高度变化了*/
+    line-height: 120px;
+    text-align: center;
+    float: left;
+    border-left: 1px solid #cccccc;
+}
+.select li a{
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+}
+.select li{
+    border-bottom: 1px solid #cccccc;
+}
+.select .select1{
+    border-left: none;
+}
+.select .select4{
+    width: 59px;
+}
+.select .selectDiv{
+    background-color: blue;
+    height:159px;
+    width: 237px;
+    position: absolute;
+    top: 190px;
+    left: 0px;
+    border: 1px solid red;
+}
+.select .selectDiv div{
+    border: 1px solid red;
+    height:159px;
+    width: 237px;
+    display: none;
+}
+/*大轮播下边的部分 小轮播图--------------------------------------------------*/
+.smallSelfShow{
+    overflow: hidden;
+    margin: 10px auto 40px;
+    width: 1212px;
+
+}
+.smallSelfShow .clock{
+    float: left;
+}
+.smallSelfShow .smallSs{
+    position: relative;
+    width: 1000px;
+    height: 151px;
+    float: right;
+    /*border: 1px solid red;*/
+    overflow: hidden;
+}
+.smallSs .smallInner{
+    height:151px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.smallSs .smallInner div{
+    float: left;
+    width: 250px;
+    height: 164px;
+    margin-left: 1px;
+}
+
+.smallSs a{
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 45px;
+    background: url("../img/pre.png") no-repeat;
+    display: none;
+}
+.smallSs a.smallBtnLeft{
+    left: 20px;
+}
+.smallSs a.smallBtnRight{
+    right: 20px;
+    background-position: -50px 0;
+}
+.smallSs:hover a{
+    display: block;
+}
+/*---------动态红线-------------------------------------------------*/
+.redLine{
+    position: relative;
+    margin: 10px auto;
+    width: 1212px;
+}
+.redLine p{
+    font-size: 20px;
+}
+.redLine p span{
+    display: inline-block;
+    width: 450px;
+    height: 24px;
+    background: url("../img/home.png") no-repeat 10px -92px;
+}
+.line{
+    position:absolute;
+    top:27px;
+    left: 0px;
+    width: 400px;
+    height: 5px;
+    background:url("../img/home.png") no-repeat 0px -124px;
+    display: none;
+}
+.redL{
+    width: 1210px;
+    height: 235px;
+    border: 1px solid #cccccc;
+}
+.bDiv{
+    margin-left: 59px;
+}
+.redL .div1{
+    float:left;
+    width: 191px;
+    height: 90%;
+    line-height: 90%;
+    padding-top: 20px;
+}
+.redL a{
+    display: block;
+    padding: 10px 0 ;
+    text-decoration: none;
+    color: black;
+}
+.redL p{
+    font-size: 14px;
+}
+.redL .money{
+    color: darkred;
+    font-weight: 900;
+}
